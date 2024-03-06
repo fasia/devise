@@ -7,6 +7,10 @@
             <div class="container">
                 {{- block "main" . }}{{- end }}
             </div>
+            <hr/>     
+            <div>
+                {{if eq .Name "About"}} {{- partial "category-posts.html" . -}} {{else}} {{end}}
+            </div>
         </div>
         {{- partial "footer.html" . -}}
     </body>

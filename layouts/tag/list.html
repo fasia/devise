@@ -10,9 +10,10 @@
                         {{ .Date.Format "Jan 2 2006" }}
                     </time>
                 {{ end }}
-                <a href="{{ .RelPermalink }}">
+                <!-- <a href="{{ .RelPermalink }}">
                     {{ .Title }}
-                </a>
+                </a> -->
+                {{ .Title }}
             </li>
         {{ end }}
     </ul>

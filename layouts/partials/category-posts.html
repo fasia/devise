@@ -12,7 +12,8 @@
                     {{ range first $recent (where .Site.RegularPages "Type" "in" site.Params.mainSections) }}
                         <li>
                             {{ .Date.Format "Jan 2 2006" }}
-                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                            <!-- <a href="{{ .Permalink }}">{{ .Title }}</a> -->
+                            {{ .Title }}
                         </li>
                     {{ end }}
                 </ul>
